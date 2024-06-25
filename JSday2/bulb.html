@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Toggle</title>
+   <link rel="stylesheet" href="bulb.css">
+</head>
+<body>
+
+  <img id="myImage" onclick="changeImage()" src="img_bulboff.png" width="100" height="180">
+
+<!-- <p>Click the light bulb to turn on/off the light.</p> -->
+<!-- Rounded switch -->
+<!-- <label class="switch">
+   <input type="checkbox">
+   <span class="slider round"></span>
+ </label> -->
+ <script>
+   
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("bulbon")) {
+    image.src = "img_bulboff.png";
+  } else {
+    image.src = "img_bulbon.png";
+  }
+}
+</script>
+
+</body>
+</html>

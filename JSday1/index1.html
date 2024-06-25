@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body id="wholebody">
+    <div class="twit">
+        <i class="fa fa-puzzle-piece"></i>
+         <h2>One piece</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas provident dolor rerum, quo voluptate iure tempora dolores, eos esse odit voluptatem fugiat facere eum nam inventore est quia laudantium atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aspernatur architecto iure sapiente porro? Distinctio at quisquam, iure, quibusdam architecto sed veniam sint optio voluptas corporis, ipsa magnam pariatur vel!
+        Laboriosam animi cum nemo necessitatibus ullam commodi architecto eum iste quod id dignissimos alias eos hic et soluta eveniet, consequuntur perspiciatis sit minus iusto iure magni, labore dolor. Nesciunt, nihil.
+        Porro voluptatum eius corporis ab quos minima dolorum obcaecati repellendus quaerat beatae illum inventore exercitationem optio asperiores veritatis recusandae similique, blanditiis, provident nulla? Commodi dolor maxime provident veritatis laboriosam perspiciatis.
+       Molestias, provident expedita dolorum rerum quaerat, consectetur odit alias nobis vel cumque sint. Repellendus similique esse dolore praesentium architecto, quos, ex vel quis, reiciendis nemo fugit numquam illum aliquid laboriosam!</p>
+    
+    <fieldset class="inner">
+        <h1 class="heading">Login</h1>
+        <input type="email" class="email" placeholder="Email"><br>
+        <input type="password" class="password" placeholder="Password"><br>
+        <input type="checkbox" class="checkbox" >Show Password<br>
+        <button class="button">SIGN IN</button><br>
+        <span class="for"> Forgot </span> &nbsp;<a class="user">Username/Password</a><span>?</span>
+    </fieldset>
+    </div>
+    <style>
+        .fa-puzzle-piece{
+           padding-left: 40%;
+            font-size: 50px;
+            color: gray;
+        }
+        .twit{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .user{
+            color: gray;
+        }
+        .inner{
+            border-radius: 10px;
+            align-items: center;
+        }
+        .heading{
+            color: grey;
+        }
+        .darkmode{
+            background-color: black;
+            color: white;
+        }
+    
+    </style>
+
+        <!-- <p id="p1"> Mamta</p> -->
+        <button onclick="nokar()">dark mode</button>
+        <script>
+            function nokar(){
+             var element= document.body;
+                //  document.getElementById("p1").innerHTML = "Pokhrel";
+                element.classList.toggle("darkmode");
+            }
+        </script>
+        
+
+
+
+
+    </body>
+    </html>
